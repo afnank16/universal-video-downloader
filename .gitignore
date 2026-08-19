@@ -1,0 +1,26 @@
+# Downloaded videos
+*.mp4
+*.mkv
+*.webm
+*.avi
+*.mov
+
+# Partial downloads
+*.part
+*.ytdl
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Node.js
+node_modules/
+
+# Environment / secrets
+.env
+cookies.txt
+cookies.sqlite
+
+# OS files
+Thumbs.db
+.DS_Store
