@@ -15,7 +15,6 @@ A simple video downloader for Windows powered by **yt-dlp** and **FFmpeg**. Past
 - 📁 Save downloads directly to the Windows Downloads folder
 - 📝 Automatically use the video's title as the filename
 - 🖥️ Simple Windows `.bat` interface
-- 🟨 Node.js ES Module version included
 - 🚫 No need to manually specify resolution or format IDs
 
 ---
@@ -26,7 +25,6 @@ A simple video downloader for Windows powered by **yt-dlp** and **FFmpeg**. Past
 universal-video-downloader/
 │
 ├── download-video.bat
-├── download-video.mjs
 ├── README.md
 ├── LICENSE
 ├── .gitignore
@@ -39,20 +37,12 @@ universal-video-downloader/
 
 ## 🛠️ Requirements
 
-### Windows Batch version
-
 You need:
 
 - Windows 10/11
 - Python
 - yt-dlp
 - FFmpeg
-
-### Node.js version
-
-You additionally need:
-
-- Node.js
 
 > Some websites may require additional yt-dlp components or a JavaScript runtime.
 
@@ -92,7 +82,7 @@ yt-dlp --version
 
 ### 3. Install FFmpeg
 
-On Windows, you can install it using winget:
+On Windows, you can install it using `winget`:
 
 ```bash
 winget install Gyan.FFmpeg
@@ -122,8 +112,6 @@ deno --version
 
 ## ▶️ Usage
 
-### Windows Batch version
-
 Run:
 
 ```bash
@@ -148,16 +136,6 @@ C:\Users\<username>\Downloads
 
 The filename will automatically be based on the video's title.
 
-### Node.js version
-
-Run:
-
-```bash
-node download-video.mjs
-```
-
-Then paste the video URL when prompted.
-
 ---
 
 ## 🧠 How It Works
@@ -170,26 +148,26 @@ The project itself doesn't implement video extraction from every website. Instea
                     ▼
           ┌─────────────────┐
           │   Downloader    │
-          │ .bat / Node.js  │
+          │      .bat       │
           └────────┬────────┘
                     │
                     ▼
-               ┌─────────┐
-               │ yt-dlp  │
-               └────┬────┘
+              ┌─────────┐
+              │ yt-dlp  │
+              └────┬────┘
                     │
               Video + Audio
                     │
                     ▼
-               ┌─────────┐
-               │ FFmpeg  │
-               └────┬────┘
+              ┌─────────┐
+              │ FFmpeg  │
+              └────┬────┘
                     │
                     ▼
-               Final MP4
+              Final MP4
                     │
                     ▼
-               Downloads/
+              Downloads/
 ```
 
 yt-dlp handles extracting the available media streams, while FFmpeg handles merging or processing them when necessary.
@@ -245,7 +223,7 @@ Downloads may fail when:
 - The website blocks automated requests
 - Additional authentication or extraction requirements are needed
 
-A URL being accessible in a web browser does not necessarily mean yt-dlp can download it.
+> A URL being accessible in a web browser does not necessarily mean yt-dlp can download it.
 
 ---
 
@@ -329,7 +307,7 @@ If you encounter a problem, open a [GitHub Issue](../../issues) and include:
 
 ## 📜 License
 
-This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+This project is licensed under the MIT License. See [LICENSE](./LICENSE) for details.
 
 ---
 
@@ -340,10 +318,9 @@ This project would not be possible without these excellent open-source projects:
 - [yt-dlp](https://github.com/yt-dlp/yt-dlp) — media extraction and downloading
 - [FFmpeg](https://ffmpeg.org/) — multimedia processing
 - [Python](https://www.python.org/) — runtime for yt-dlp
-- [Node.js](https://nodejs.org/) — JavaScript runtime for the Node.js version
 
 ---
 
 ## ⭐ If you find this project useful
 
-Give the repository a star on GitHub and feel free to contribute improvements!
+Give the repository a star on GitHub and feel free to contribute improvements.
