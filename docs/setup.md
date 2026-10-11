@@ -177,7 +177,7 @@ python -m pip install -U "yt-dlp[default]"
 
 ### `ffmpeg` is not recognized
 
-Install FFmpeg :
+Install FFmpeg:
 
 ```powershell
 winget install Gyan.FFmpeg
