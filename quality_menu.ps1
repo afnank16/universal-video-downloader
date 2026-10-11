@@ -29,7 +29,7 @@ $options = @(
     }
 )
 
-$selected = 2
+$selected = 4
 $startRow = [Console]::CursorTop
 $menuTop = $startRow + 2
 
