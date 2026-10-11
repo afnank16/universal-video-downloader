@@ -12,7 +12,7 @@ echo ==========================================
 echo.
 echo Enter the video URL:
 set "URL="
-set /p "URL=^> "
+set /p "URL=> "
 
 if not defined URL (
     echo.
