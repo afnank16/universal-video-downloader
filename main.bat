@@ -2,7 +2,7 @@
 @echo off
 setlocal EnableExtensions
 title Universal Video Downloader
-color 0A
+color 07
 
 :START
 cls
